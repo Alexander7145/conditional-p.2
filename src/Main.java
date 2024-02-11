@@ -29,62 +29,64 @@ public class Main {
             System.out.println(+year + " год не является висококосным");
         }
 
-        int deliveryDistance = 55;
+        int deliveryDistance = 35;
         int minDelivery = 1;
-        if (deliveryDistance > 100) {
-            System.out.println("Доставки нет");
-            return;
-        }
-        if (deliveryDistance > 20) {
-            minDelivery++;
-        }
-        if (deliveryDistance > 60) {
-            minDelivery++;
-        }
-        System.out.println("Доставка займет " + minDelivery + " суток");
+        if (deliveryDistance <= 20) {
+            System.out.println(" Доствка займет 1 сутки");
+        } else {
+            if (deliveryDistance > 20 && deliveryDistance <= 60) {
+                System.out.println(" Доставка займет 2 суток ");
+            }
+            if (deliveryDistance > 60 && deliveryDistance <= 100) {
+                System.out.println(" Доставка займет 3 суток");
+            } else if (deliveryDistance > 100) {
+                System.out.println(" Доставка не осущевстляется");
+            }
 
-        int monthNumber = 13;
-        switch (monthNumber) {
-            case 1:
-                System.out.println(" Зима ");
-                break;
-            case 2:
-                System.out.println(" Зима ");
-                break;
-            case 3:
-                System.out.println(" Весна ");
-                break;
-            case 4:
-                System.out.println(" Весна ");
-                break;
-            case 5:
-                System.out.println(" Весна ");
-                break;
-            case 6:
-                System.out.println(" Лето пришло ");
-                break;
-            case 7:
-                System.out.println(" Лето ");
-                break;
-            case 8:
-                System.out.println(" Лето ");
-                break;
-            case 9:
-                System.out.println(" Золотая осень ");
-                break;
-            case 10:
-                System.out.println(" Осень ");
-                break;
-            case 11:
-                System.out.println(" Зима пришла ");
-                break;
-            case 12:
-                System.out.println(" Зима ");
-                break;
-            default:
-                System.out.println(" Такого месяца не существует ");
-                break;}
+            int monthNumber = 9;
+            switch (monthNumber) {
+                case 1:
+                    System.out.println(" Зима ");
+                    break;
+                case 2:
+                    System.out.println(" Зима ");
+                    break;
+                case 3:
+                    System.out.println(" Весна ");
+                    break;
+                case 4:
+                    System.out.println(" Весна ");
+                    break;
+                case 5:
+                    System.out.println(" Весна ");
+                    break;
+                case 6:
+                    System.out.println(" Лето пришло ");
+                    break;
+                case 7:
+                    System.out.println(" Лето ");
+                    break;
+                case 8:
+                    System.out.println(" Лето ");
+                    break;
+                case 9:
+                    System.out.println(" Золотая осень ");
+                    break;
+                case 10:
+                    System.out.println(" Осень ");
+                    break;
+                case 11:
+                    System.out.println(" Зима пришла ");
+                    break;
+                case 12:
+                    System.out.println(" Зима ");
+                    break;
+                default:
+                    System.out.println(" Такого месяца не существует ");
+                    break;
+            }
 
+        }
     }
 }
 
